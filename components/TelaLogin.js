@@ -1,9 +1,10 @@
 import React, { useState, useCallback } from 'react';
-import { View, Text, ImageBackground, TouchableOpacity, StyleSheet, TextInput, Alert } from 'react-native';
+import { View, Text, ImageBackground, TouchableOpacity, StyleSheet, TextInput, Alert, Image } from 'react-native';
 import { useFocusEffect } from '@react-navigation/native';
 import firebase from '../config/Firebase';
 
 const backgroundImg = require('../Assets/mercado10.png');
+const logoImg = require('../Assets/image_6225696207004_PRICETAG-500x500.png');
 
 const TelaLogin = ({ navigation }) => {
   const [email, setEmail] = useState('');
@@ -47,7 +48,8 @@ const TelaLogin = ({ navigation }) => {
   return (
     <ImageBackground source={backgroundImg} style={styles.background}>
       <View style={styles.container}>
-        <Text style={styles.title}>Tela de Login</Text>
+        <Text style={styles.title}></Text>
+        <Image source={logoImg} style={styles.logo} />
         <View style={styles.inputContainer}>
           <TextInput
             placeholder="Email"
@@ -92,6 +94,11 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 20,
     color: '#003761',
+  },
+  logo: {
+    width: 150,
+    height: 150, // Ajuste conforme necessário
+    marginBottom: 20, // Ajuste conforme necessário
   },
   inputContainer: {
     marginBottom: 20,
