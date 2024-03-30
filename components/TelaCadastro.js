@@ -8,23 +8,23 @@ import { TextInputMask } from 'react-native-masked-text';
 
 export default function TelaCadastro({ navigation }) {
   const [nomeComercio, setNomeComercio] = useState("");
+  const [endereco, setEndereco] = useState(""); 
   const [nomeProduto, setNomeProduto] = useState("");
   const [categoriaProduto, setCategoriaProduto] = useState("");
   const [marcaProduto, setMarcaProduto] = useState("");
   const [unidadeMedida, setUnidadeMedida] = useState("");
   const [valorProduto, setValorProduto] = useState("");
-  const [dataValidade, setDataValidade] = useState("");
 
   const handleCadastrarProduto = async () => {
     try {
       await firebase.database().ref('produtos').push({
         nomeComercio,
+        endereco,
         nomeProduto,
         categoriaProduto,
         marcaProduto,
         unidadeMedida,
         valorProduto,
-        dataValidade
       });
       limparCampos();
       navigation.navigate('TelaProdutos');
@@ -37,25 +37,13 @@ export default function TelaCadastro({ navigation }) {
 
   const limparCampos = () => {
     setNomeComercio("");
+    setEndereco("");
     setNomeProduto("");
     setCategoriaProduto("");
     setMarcaProduto("");
     setUnidadeMedida("");
     setValorProduto("");
-    setDataValidade("");
   }
-
-  const formatarData = (input) => {
-    const cleaned = input.replace(/\D/g, '');
-
-    if (cleaned.length <= 2) {
-      return cleaned;
-    }
-    if (cleaned.length <= 4) {
-      return `${cleaned.slice(0, 2)}/${cleaned.slice(2)}`;
-    }
-    return `${cleaned.slice(0, 2)}/${cleaned.slice(2, 4)}/${cleaned.slice(4, 8)}`;
-  };
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
@@ -71,6 +59,12 @@ export default function TelaCadastro({ navigation }) {
           placeholder="Nome do Comércio"
           onChangeText={setNomeComercio}
           value={nomeComercio}
+        />
+        <TextInput
+          style={styles.input}
+          placeholder="Endereço do Estabelecimento"
+          onChangeText={setEndereco}
+          value={endereco}
         />
         <TextInput
           style={styles.input}
@@ -110,17 +104,10 @@ export default function TelaCadastro({ navigation }) {
           value={valorProduto}
           onChangeText={setValorProduto}
         />
-        <TextInput
-          style={styles.input}
-          placeholder="Data de Validade (DD/MM/AAAA)"
-          onChangeText={(text) => setDataValidade(formatarData(text))}
-          value={dataValidade}
-          keyboardType="numeric"
-        />
         <TouchableOpacity
           style={[styles.button, { backgroundColor: '#007bff' }]}
           onPress={handleCadastrarProduto}
-          disabled={!nomeComercio || !nomeProduto || !categoriaProduto || !marcaProduto || !unidadeMedida || !valorProduto || !dataValidade}
+          disabled={!nomeComercio || !endereco || !nomeProduto || !categoriaProduto || !marcaProduto || !unidadeMedida || !valorProduto}
         >
           <Text style={styles.buttonText}>Cadastrar Produto</Text>
         </TouchableOpacity>
@@ -131,14 +118,7 @@ export default function TelaCadastro({ navigation }) {
           onPress={() => {
             logout();
             navigation.navigate('TelaLogin');
-            
-            setNomeComercio("");
-            setNomeProduto("");
-            setCategoriaProduto("");
-            setMarcaProduto("");
-            setUnidadeMedida("");
-            setValorProduto("");
-            setDataValidade("");
+            limparCampos();
           }}
         >
           <Text style={styles.buttonText}>Sair</Text>
