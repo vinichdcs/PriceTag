@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { ScrollView, TextInput, View, Alert, Image, TouchableOpacity, Text } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { ScrollView, TextInput, View, Alert, Image, TouchableOpacity, Text, StyleSheet } from 'react-native';
 import { Card } from 'react-native-paper';
 import firebase from '../config/Firebase';
 import { styles } from './Utils';
@@ -14,6 +14,17 @@ export default function TelaCadastro({ navigation }) {
   const [marcaProduto, setMarcaProduto] = useState("");
   const [unidadeMedida, setUnidadeMedida] = useState("");
   const [valorProduto, setValorProduto] = useState("");
+  const [showWelcomeMessage, setShowWelcomeMessage] = useState(false);
+
+  useEffect(() => {
+    const unsubscribe = navigation.addListener('focus', () => {
+      const user = firebase.auth().currentUser;
+      if (user) {
+        setShowWelcomeMessage(true);
+      }
+    });
+    return unsubscribe;
+  }, [navigation]);
 
   const handleCadastrarProduto = async () => {
     try {
@@ -54,6 +65,14 @@ export default function TelaCadastro({ navigation }) {
         />
       </View>
       <Card style={styles.card}>
+        {showWelcomeMessage && (
+          <View style={localStyles.welcomeMessageContainer}>
+            <Text style={localStyles.welcomeMessageTitle}>Bem-vindo ao Sistema de Cadastro de Produtos!</Text>
+            <Text style={localStyles.welcomeMessageText}>
+              
+            </Text>
+          </View>
+        )}
         <TextInput
           style={styles.input}
           placeholder="Nome do Comércio"
@@ -112,7 +131,6 @@ export default function TelaCadastro({ navigation }) {
           <Text style={styles.buttonText}>Cadastrar Produto</Text>
         </TouchableOpacity>
 
-        {}
         <TouchableOpacity
           style={[styles.button, { backgroundColor: 'red', marginTop: 10 }]}
           onPress={() => {
@@ -127,3 +145,21 @@ export default function TelaCadastro({ navigation }) {
     </ScrollView>
   );
 }
+
+const localStyles = StyleSheet.create({
+  welcomeMessageContainer: {
+    alignItems: 'center',
+    marginVertical: 20,
+  },
+  welcomeMessageTitle: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#d58500', // cor laranja vibrante
+    marginBottom: 10,
+  },
+  welcomeMessageText: {
+    fontSize: 16,
+    color: '#d58500', // cor laranja vibrante
+    textAlign: 'center',
+  },
+});
