@@ -97,8 +97,8 @@ const styles = StyleSheet.create({
   },
   logo: {
     width: 150,
-    height: 150, // Ajuste conforme necessário
-    marginBottom: 20, // Ajuste conforme necessário
+    height: 150, 
+    marginBottom: 20, 
   },
   inputContainer: {
     marginBottom: 20,
