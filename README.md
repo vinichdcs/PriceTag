@@ -76,7 +76,7 @@ Para configurar e rodar o projeto, utilize o Snack Expo tanto no computador quan
 
  ![image](https://github.com/vinichdcs/PriceTag/assets/126787332/8c3880b0-2f7f-4b83-a758-6c191b1a318b)
 
- [imagem readme.pdf](https://github.com/user-attachments/files/15686298/imagem.readme.pdf)
+ ![imagem readme.pdf](https://github.com/user-attachments/files/15686298/imagem.readme.pdf)
  
 
  ![image](https://github.com/vinichdcs/PriceTag/assets/126787332/7deb3e5c-a63a-417c-a182-17b55599d126)
