@@ -101,7 +101,7 @@ Para configurar e rodar o projeto, utilize o Snack Expo tanto no computador quan
 •	Snack Expo (para desenvolvimento e teste em tempo real)
 
 
-##Requisitos de Sistema
+## Requisitos de Sistema
 Hardware
 •	Processador: x86_64 (Intel ou AMD)
 •	RAM: Pelo menos 8 GB de RAM (16 GB recomendado para melhor desempenho)
