@@ -119,7 +119,20 @@ Sistema Operacional
 •	Linux: Suportado para desenvolvimento Android.
 
 
-![image](https://github.com/vinichdcs/PriceTag/assets/126787332/8d1f99ee-2cb4-45d3-8538-217601b30e26)
+## Contribuição
+
+Sinta-se à vontade para contribuir com este projeto. Para isso:
+
+### 1.	Faça um fork deste repositório.
+   
+### 2.	Crie uma branch para sua feature (git checkout -b feature/nova-feature).
+	
+### 3.	Faça commit das suas alterações (git commit -am 'Adiciona nova feature').
+	
+### 4.	Faça push para a branch (git push origin feature/nova-feature).
+	
+### 5.	Abra um Pull Request.
+
 
 
 
