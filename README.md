@@ -158,6 +158,7 @@ Objetivo: Estruture seu código de maneira lógica e consistente.
 Objetivo: Reutilize código sempre que possível para evitar duplicação.
 
 
+
 ## Teste de Renderização
 
 Um teste básico para verificar se a tela de produtos é renderizada corretamente.
@@ -173,6 +174,10 @@ Vamos adicionar um teste para verificar se um produto pode ser excluído correta
 ### Teste de Alteração de Produto
 E um teste para verificar se um produto pode ser alterado corretamente.
 
+
+## Observer
+
+O uso de useEffect e useState no componente TelaProdutos.js com Firebase é um exemplo claro do padrão Observer em ação. Esse padrão melhora a reatividade e a capacidade de manutenção do código, garantindo que a interface do usuário esteja sempre sincronizada com o estado atual dos dados.
 
 
 
