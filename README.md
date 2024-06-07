@@ -89,6 +89,7 @@ Para configurar e rodar o projeto, utilize o Snack Expo tanto no computador quan
 
 
 ### Tecnologias Utilizadas
+
 ### Linguagem de Programação: JavaScript
 ### Frameworks e Bibliotecas:
 
@@ -102,7 +103,7 @@ Para configurar e rodar o projeto, utilize o Snack Expo tanto no computador quan
 
 
 ## Requisitos de Sistema
-Hardware
+### Hardware
 
 •	Processador: x86_64 (Intel ou AMD)
 
