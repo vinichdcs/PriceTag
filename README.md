@@ -101,6 +101,18 @@ Para configurar e rodar o projeto, utilize o Snack Expo tanto no computador quan
 •	Snack Expo (para desenvolvimento e teste em tempo real)
 
 
+##Requisitos de Sistema
+Hardware
+•	Processador: x86_64 (Intel ou AMD)
+•	RAM: Pelo menos 8 GB de RAM (16 GB recomendado para melhor desempenho)
+•	Espaço em Disco: Pelo menos 10 GB de espaço livre (mais pode ser necessário dependendo do tamanho do projeto e dos arquivos baixados)
+Sistema Operacional
+•	macOS: Recomendado para desenvolvimento iOS e Android, necessário se você quiser compilar e testar no simulador iOS.
+•	Windows: Suportado para desenvolvimento Android.
+•	Linux: Suportado para desenvolvimento Android.
+
+
+
 
 ### Autor
 
