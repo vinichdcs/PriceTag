@@ -1,7 +1,7 @@
 # Price Tag
 ### Descrição
 O Price Tag é uma aplicação que permite o cadastro de produtos de supermercado, facilitando a comparação de preços entre diferentes estabelecimentos. O projeto oferece funcionalidades para cadastrar produtos, incluindo informações como valor, nome e endereço do comércio, categoria do produto, marca, unidade de medida (kg ou L), e valor do produto.
-### Objetivo
+## Objetivo
 O objetivo da aplicação é fornecer aos usuários uma ferramenta prática e eficiente para registrar e comparar os preços de produtos de supermercados. Com o Price Tag, os usuários podem:
 
        •	Economizar dinheiro ao identificar os estabelecimentos com os melhores preços.
@@ -10,7 +10,7 @@ O objetivo da aplicação é fornecer aos usuários uma ferramenta prática e ef
 
        •	Facilitar o planejamento de compras, permitindo decisões informadas sobre onde comprar produtos específicos.
 
-### Instalação
+## Instalação
 Para configurar e rodar o projeto, utilize o Snack Expo tanto no computador quanto no celular para verificação em tempo real. As dependências a serem instaladas são as seguintes:
 
   "firebase": "8.3.2"
@@ -65,7 +65,7 @@ Para configurar e rodar o projeto, utilize o Snack Expo tanto no computador quan
   3-	Adicione as dependências mencionadas acima no arquivo de configurações do Snack Expo.
 
 
-  ### Uso
+  ## Uso
 
   O aplicativo é intuitivo e fácil de utilizar. Na tela inicial, há opções para login e senha, além de uma opção para novo cadastro. Após o login, o usuário será levado a uma tela onde poderá cadastrar novos produtos, visualizar os produtos cadastrados e comparar preços entre diferentes mercadorias e estabelecimentos.
 
@@ -88,7 +88,7 @@ Para configurar e rodar o projeto, utilize o Snack Expo tanto no computador quan
 
 
 
-### Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 ### Linguagem de Programação: JavaScript
 ### Frameworks e Bibliotecas:
@@ -121,9 +121,9 @@ Sistema Operacional
 
 
 
-### Autor
+## Autor
 
-Vinícius Sanches
+### Vinícius Sanches
 
   
 
