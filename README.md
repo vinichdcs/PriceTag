@@ -158,6 +158,22 @@ Objetivo: Estruture seu código de maneira lógica e consistente.
 Objetivo: Reutilize código sempre que possível para evitar duplicação.
 
 
+## Teste de Renderização
+
+Um teste básico para verificar se a tela de produtos é renderizada corretamente.
+### Mock de Firebase
+Para testar a interação com o Firebase, você precisa criar mocks para as funções do Firebase usadas no componente.
+
+### Teste de Carregamento de Produtos
+Vamos criar um teste para verificar se os produtos são carregados corretamente.
+
+### Teste de Exclusão de Produto
+Vamos adicionar um teste para verificar se um produto pode ser excluído corretamente.
+
+### Teste de Alteração de Produto
+E um teste para verificar se um produto pode ser alterado corretamente.
+
+
 
 
 
