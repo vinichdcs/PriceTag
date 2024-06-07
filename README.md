@@ -119,6 +119,8 @@ Sistema Operacional
 •	Linux: Suportado para desenvolvimento Android.
 
 
+![image](https://github.com/vinichdcs/PriceTag/assets/126787332/8d1f99ee-2cb4-45d3-8538-217601b30e26)
+
 
 
 ## Autor
