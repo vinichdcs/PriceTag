@@ -132,30 +132,29 @@ Sinta-se à vontade para contribuir com este projeto. Para isso:
 4.	Faça push para a branch (git push origin feature/nova-feature).
 	
 5.	Abra um Pull Request.
-6.	
 
 
 ## Princípios de Código Limpo
 
 1. Nomeação Clara e Significativa
 
-Objetivo: Use nomes descritivos para variáveis, funções, componentes, e outros elementos do código.
+Objetivo: nomes descritivos para variáveis, funções, componentes, e outros elementos do código.
 
 2. Funções Pequenas e Focadas
 
-Objetivo: Cada função deve fazer uma coisa e fazê-la bem. Mantenha as funções pequenas e focadas em uma única responsabilidade.
+Objetivo: Manter as funções pequenas e focadas em uma única responsabilidade.
 
 3. Comentários Relevantes
 
-Objetivo: Adicione comentários onde o código pode ser difícil de entender, mas evite comentários óbvios ou redundantes.
+Objetivo: Comentar onde o código pode ser difícil de entender, evitando comentários óbvios ou redundantes.
 
 4. Organização e Estrutura
 
-Objetivo: Estruture seu código de maneira lógica e consistente.
+Objetivo: Estruture o código de maneira lógica e consistente.
 
 5. Evitar Código Duplicado
 
-Objetivo: Reutilize código sempre que possível para evitar duplicação.
+Objetivo: Reutilizar código sempre que possível para evitar duplicação.
 
 
 
@@ -163,7 +162,7 @@ Objetivo: Reutilize código sempre que possível para evitar duplicação.
 
 Um teste básico para verificar se a tela de produtos é renderizada corretamente.
 ### Mock de Firebase
-Para testar a interação com o Firebase, você precisa criar mocks para as funções do Firebase usadas no componente.
+Para testar a interação com o Firebase, crie mocks para as funções do Firebase usadas no componente.
 
 ### Teste de Carregamento de Produtos
 Vamos criar um teste para verificar se os produtos são carregados corretamente.
